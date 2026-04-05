@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>knot.okayy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Inter',sans-serif;
+background:#faf7f5;
+color:#2d2d2d;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#faf7f5;
+}
+
+.logo{height:50px}
+
+nav a{
+text-decoration:none;
+margin-left:18px;
+color:#6b6b6b;
+font-size:14px;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(#f6eaea,#e6efe6);
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:34px;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:12px 18px;
+border:none;
+cursor:pointer;
+font-size:14px;
+border-radius:8px;
+}
+
+.btn-primary{background:#e8cfcf}
+.btn-secondary{background:#d6e3d4}
+
+.banner{
+height:280px;
+background:url('https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?q=80&w=1200&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.section{
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.04);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px
+}
+
+.price{
+margin-top:8px;
+color:#7a6f66;
+font-weight:600;
+}
+
+.order-box{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+iframe{
+border:none;
+border-radius:12px;
+background:white;
+}
+
+footer{
+background:#f3efe9;
+padding:40px 20px;
+margin-top:40px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.footer-title{
+font-family:'Playfair Display',serif;
+margin-bottom:10px;
+}
+
+footer a{
+text-decoration:none;
+color:#5b5b5b;
+}
+
+footer a:hover{
+opacity:0.7;
+}
+
+@media(max-width:600px){
+.hero h1{font-size:26px}
+.footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<img src="images\knot.okayy design.png" class="logo">
+<div>
+<a href="#products">Products</a>
+<a href="#order">Order</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Crochet made just for you.</h1>
+<p>
+Welcome to knot.okayy! We create beautiful, handcrafted crochet products including pouches big and small, bag charms, gajras, and hair accessories. Each piece is made with love and attention to detail, ready to be customized just the way you like it.
+</p>
+
+<div class="buttons">
+<a href="#products"><button class="btn btn-primary">Browse Products</button></a>
+<a href="#order"><button class="btn btn-secondary">Place an Order</button></a>
+</div>
+</section>
+
+<div class="banner"></div>
+
+<section class="section" id="products">
+<h2>Products & Prices</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images\small_pouch.jpg">
+<h3>Small Pouch</h3>
+<p>Compact handcrafted crochet pouch.</p>
+<div class="price">₹200</div>
+</div>
+
+<div class="card">
+<img src="images\large_pouch.jpg">
+<h3>Large Pouch</h3>
+<p>Spacious crochet tote.</p>
+<div class="price">₹350</div>
+</div>
+
+<div class="card">
+<img src="images\charms.jpg">
+<h3>Bag Charm</h3>
+<p>Adorable crochet charm.</p>
+<div class="price">₹180</div>
+</div>
+
+<div class="card">
+<img src="images\gajra.jpg">
+<h3>Gajra</h3>
+<p>Beautiful crochet flower garland. Available in white, offwhite and rani pink colour</p>
+<div class="price">₹200</div>
+</div>
+
+<div class="card">
+<img src="images\hair_accessory.jpg">
+<h3>Hair Accessories</h3>
+<p>Handmade crochet clips.</p>
+<div class="price">₹300</div>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="order">
+<div class="order-box">
+<h2>Place Your Order</h2>
+
+<iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLSf54yMp33CRR326Rp3VvcRtECOwmbKkdXuYtzkEC0K3ZmF1MA/viewform?embedded=true" 
+width="100%" 
+height="1000">
+Loading…
+</iframe>
+
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+
+<div>
+<div class="footer-title">knot.okayy</div>
+<p>Handcrafted crochet products made with love and care.</p>
+</div>
+
+<div>
+<div class="footer-title">Quick Links</div>
+
+<p><a href="#products">Products & Prices</a></p>
+<p><a href="#order">Place an Order</a></p>
+
+<p>
+<a href="https://instagram.com/knot.okayy" target="_blank">
+Instagram
+</a>
+</p>
+
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:30px">
+© 2026 knot.okayy. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
